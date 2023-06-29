@@ -164,13 +164,14 @@ img {
     line-height: 1.5; 
     letter-spacing: 0.02em;
     color: #ffffff;
-    padding-left: 80px; 
+    text-align: center;
 }
 
 .footer-form {
+    width: 100%;
     display: flex;
-    gap: 24px;
-    padding-left: 80px;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .footer-input {
@@ -208,6 +209,7 @@ img {
     background-color: #4D5AE5;
     border: none;
     border-radius: 4px; 
+    margin: 0 auto;
 
 }
 
@@ -1015,22 +1017,26 @@ line-height: 0;
 
 .footer {
     background-color: #2e2f42;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 
 }
 
 .footer-container {
+    max-width: 100%;
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .logotype-footer {
-    margin-right: 120px;
+    margin: 0 auto;
 
 }
 
 .logo-footer {
+    display: block;
     font-family: "Raleway", sans-serif;
     font-weight: 800;
     font-size: 18px;
@@ -1038,11 +1044,11 @@ line-height: 0;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color:var(--primary-brand-color);
+    text-align: center;
 }
 
 .logo-footer.link {
     text-decoration:none;
-    display: inline-block;
     margin-bottom: 16px;
 }
 
@@ -1060,6 +1066,11 @@ line-height: 0;
     max-width: 264px;
      }
 
+.footer-icon-menu{
+    margin-top: 72px;
+    margin-bottom: 72px;
+}     
+
 .footer-icon-text{
     font-weight: 500;
     font-size: 16px;
@@ -1067,6 +1078,7 @@ line-height: 0;
     letter-spacing: 0.02em;
     color: var(--white-color);
     margin-bottom: 16px;
+    text-align: center;
 
 }     
 
@@ -1102,6 +1114,45 @@ line-height: 0;
 
 .footer-icons{
     fill: var(--light-color);
+
+}
+
+@media screen and (min-width: 768px) {
+    .footer {
+        padding: 96px 0;
+        background-color: #2e2f42;
+    }
+    .footer-container{
+        flex-direction: row;
+        row-gap: 72px;
+        flex-wrap: wrap;
+        align-items: baseline;
+        max-width: 584px;
+        text-align: start;
+        justify-content: unset;
+    }
+    .logotype-footer{
+        margin: unset;
+    }
+    .logo-footer{
+        text-align: start;
+    }
+    .footer-text{
+        max-width: 264px;
+        margin-right: 24px
+    }
+    .footer-icon-menu{
+        margin: 0;
+    }
+    .footer-icon-text{
+        text-align: start;
+    }
+    .footer-modal-label{
+        text-align: start;
+    }
+    .footer-form{
+        flex-direction: row;
+    }
 
 }
 
