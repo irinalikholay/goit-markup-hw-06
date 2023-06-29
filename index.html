@@ -25,7 +25,11 @@
                 <li class="header-menu-item"> <a class="header-menu-link link" href="">Contacts</a></li>
             </ul>
             </nav> 
-
+<button class="menu-open-btn" data-menu-open>
+    <svg class="menu-open-icon" width="32" height="22">
+        <use href="./images/icons.svg#menu-hamburger"></use>
+    </svg>
+</button>
         <address class="header-contact">
             <ul class="header-contact-menu list">
                 <li class="header-contact-item">
@@ -37,19 +41,27 @@
             </ul>
         </address>
     </div>
-              
+    <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+            <button class="menu-close-button" data-menu-close>
+                <svg class="menu-close-icon" width="8" height="8">
+                    <use href="./images/modal.svg#icon-close-black-18dp-2-1"></use>
+                </svg>
+            </button>
+        </div>
+    </div>         
 </header>
 
 <main>
-    <section class="hero-section">
+     <section class="hero-section">
         <div class="container-hero container">
             <h1 class="hero-title">Effective Solutions for Your Business</h1>
             <button type="button" class="hero-button" data-modal-open>Order Service</button>
         </div>
-    </section>
+    </section> 
  
 
-    <section class="main-content">
+     <section class="main-content">
         <div class="main-container container">
             <h2 class="visually-hidden title">Content</h2>
         <ul class="content-list list">
@@ -91,25 +103,37 @@
             </li>
         </ul>
         </div>
-    </section>
+    </section> 
 
-    <section class="main-section-process">
+     <section class="main-section-process">
         <div class="process-container container">
             <h2 class="process-title">What are we doing</h2>
         <ul class="process-menu list">
             <li class="process-item">
-                <img src="./images/Rectangle1.jpg" alt="computer monitor" width="360"/>
+                <img
+  srcset="./images/desktop1x.jpg 1x, ./images/desktop2x.jpg 2x"
+  src="./images/desktop1x.jpg"
+  alt="computer monitor" width="360"
+/>
             </li>
             <li class="process-item">
-                <img src="./images/Rectangle2.jpg" alt="mobile phone" width="360"/>
+                <img
+  srcset="./images/phone1x.jpg 1x, ./images/phone2x.jpg 2x"
+  src="./images/phone1x.jpg"
+  alt="mobile phone" width="360"
+/>
             </li>
             <li class="process-item">
-                <img src="./images/Rectangle3.jpg" alt="mobile phone and computer" width="360"/>
+                <img
+                srcset="./images/device1x.jpg 1x, ./images/device2x.jpg 2x"
+                src="./images/device1x.jpg"
+                alt="mobile phone and computer" width="360"
+              />
             </li>
         </ul>
 
         </div>       
-    </section>
+    </section> 
 
     <section class="main-section-team">
         <div class="team-container container">
@@ -275,7 +299,7 @@
         </div>        
     </section>
 
-<section class="customers">
+ <section class="customers">
     <div class="customers-container container">
         <h2 class="customers-title">Customers</h2>
         <ul class="customers-menu">
@@ -336,7 +360,7 @@
 
 </main>
 
-<footer class="footer">
+<!-- <footer class="footer">
     <div class="footer-container container">
         <div class="logotype-footer">
             <a class="logo-footer link" href="./index.html">Web<span class="logo-studio-footer">Studio</span></a>
@@ -400,8 +424,8 @@
  </div>    
   
 
-</footer>
-<div class="backdrop is-hidden" data-modal>
+</footer> -->
+<!-- <div class="backdrop is-hidden" data-modal>
     <div class="modal">
         <button type="button" class="modal-button" data-modal-close>
             <svg class="button-icon-close" width="8" height="8">
@@ -490,8 +514,9 @@
         </div>
         
          
-    </div>
+    </div> -->
 
+<script src="./js/mobile-menu.js"></script>
 <script src="./js/modal.js"></script>
 </body>
 </html>
