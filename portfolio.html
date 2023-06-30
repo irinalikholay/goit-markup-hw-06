@@ -25,6 +25,11 @@
                     <li class="header-menu-item"> <a class="header-menu-link link" href="">Contacts</a></li>
                 </ul>
                 </nav> 
+            <button class="menu-open-btn" data-menu-open>
+                    <svg class="menu-open-icon" width="32" height="22">
+                        <use href="./images/icons.svg#menu-hamburger"></use>
+                    </svg>
+            </button>
     
             <address class="header-contact">
                 <ul class="header-contact-menu list">
@@ -37,10 +42,18 @@
                 </ul>
             </address>
         </div>
-                  
+        <div class="mobile-menu" data-menu>
+            <div class="container mobile-menu-container">
+                <button class="menu-close-button" data-menu-close>
+                    <svg class="menu-close-icon" width="8" height="8">
+                        <use href="./images/modal.svg#icon-close-black-18dp-2-1"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>           
     </header>
 
-<main class="main">  
+<!--  <main class="main">  
     <section class="galleri">
         <div class="portfolio-container container">
             <h1 class="visually-hidden title">Portfolio </h1>
@@ -228,7 +241,7 @@
         </div>
         
     </section>
-</main>
+</main> -->
 
 <footer class="footer">
     <div class="footer-container container">
@@ -301,5 +314,7 @@
     </div>
     
 </footer>
+
+<script src="./js/mobile-menu.js"></script>
 </body>
 </html>

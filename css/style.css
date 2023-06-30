@@ -1156,6 +1156,23 @@ line-height: 0;
 
 }
 
+@media screen and (min-width: 1158px) {
+    .footer-container {
+        max-width: 1158px;
+        flex-wrap: nowrap;
+    }
+    .logotype-footer {
+        margin-right: 120px;
+    }
+    .footer-text{
+        margin-right: 0;
+    }
+    .footer-icon-menu{
+        margin-right: 80px;
+    }
+
+}
+
      /** ПОРТФОЛИО **/
 
      .galleri {
