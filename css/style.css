@@ -40,6 +40,10 @@ img {
     height: auto;
 }
 
+.link{
+    text-decoration: none;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -437,6 +441,7 @@ img {
 
 }
 
+/** mob-menu **/
 .menu-open-btn {
     background-color: transparent;
     border: none;
@@ -463,9 +468,9 @@ img {
 
 .mobile-menu-container {
     position: relative;
-}
+    padding: 80px 35px 40px 40px ;
+ }
 .menu-close-button {
-    background-color: transparent;
     width: 24px;
     height: 24px;
     border-radius: 50%;
@@ -474,12 +479,80 @@ img {
     top: 24px;
     right: 24px;
     padding: 0;
-line-height: 0;
-}
-.mobile-menu.is-open{
+    background-color: transparent;
+    line-height: 0;
+    }
+
+    .mobile-menu.is-open{
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+    }
+
+    .mob-nav{
+        padding-bottom: 285px;
+    }
+    
+
+.mob-menu-list{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+}
+.mob-current{
+    color: #4D5AE5;
+    transition: color 250ms;
+    font-size: 36px;
+    font-family: Roboto;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+}
+.mob-menu-link{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+    color: #2E2F42;
+}
+.mob-adress-item{
+    margin-bottom: 40px;
+}
+.mobile-social-list{
+    display: flex;
+    flex-direction: row;
+    gap: 56px;
+    padding-bottom: 40px;
+}
+.mobile-social-link{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background-color:var(--primary-brand-color);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    transition: background-color var(--transition);
+}
+.mob-tel-link{
+    font-size: 20px;
+    color: var(--primary-brand-color);
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    font-style: normal;
+}
+.mob-mail-link{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+    font-style: normal;
 }
 
 /** ADRESS **/
